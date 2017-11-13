@@ -19,7 +19,8 @@
     "fix": "eslint ./lib ./test --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint ./lib ./test"
+    "lint": "eslint ./lib ./test",
+    "prepublish": "yarn clean && yarn build"
   },
   "pre-commit": [
     "lint"
